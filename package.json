@@ -1,0 +1,28 @@
+{
+  "name": "github-cli",
+  "cliname": "GitHub CLI",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+	"repository": "msaaddev/GitHub-CLI",
+  "main": "index.js",
+  "author": {
+    "name": "Muhammad Saad",
+    "email": "mrsaadirfan@gmail.com",
+    "url": "https://twitter.com/msaaddev"
+  },
+  "bin": {
+    "github": "index.js",
+    "github-cli": "index.js"
+  },
+  "files": [
+    "index.js",
+    "utils/*"
+  ],
+  "keywords": [],
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^4.0.0",
+    "console-read-write": "^0.1.1"
+  }
+}
