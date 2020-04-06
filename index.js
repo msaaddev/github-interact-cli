@@ -1,3 +1,10 @@
+/*
+ *
+ * Author: Muhammad Saad
+ * GitHub: msaaddev
+ * Twitter: https://twitter.com/msaaddev
+ */
+
 const io = require("console-read-write");
 const { cyan, red, green } = require("chalk");
 const axios = require("axios");
