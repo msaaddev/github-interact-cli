@@ -1,10 +1,9 @@
 {
   "name": "github-cli",
-  "cliname": "GitHub CLI",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "license": "MIT",
-	"repository": "msaaddev/GitHub-CLI",
+  "repository": "msaaddev/GitHub-CLI",
   "main": "index.js",
   "author": {
     "name": "Muhammad Saad",
