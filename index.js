@@ -7,6 +7,7 @@
 
 const io = require("console-read-write");
 const { cyan, red, green } = require("chalk");
+const box = require("./utils/box");
 const axios = require("axios");
 
 const emailFetchAutomation = async () => {
@@ -19,26 +20,16 @@ const emailFetchAutomation = async () => {
     .then((res) => {
       for (let i = 0; i < res.data.length; i++) {
         if (res.data[i].type === "PushEvent") {
-          console.log(green("	-------------------------------------------"));
-          console.log(green("	|                                         |"));
-          console.log(
-            green("	      ✉️  Email: ") +
-              res.data[i].payload.commits[0].author.email
-          );
-          console.log(green("	|                                         |"));
-          console.log(green("	-------------------------------------------"));
+          const name = "✉️  Email";
+          box(green, name, res.data[i].payload.commits[0].author.email);
           break;
         }
       }
     })
     .catch((err) => {
-      console.log(red("	------------------------------------------"));
-      console.log(red("	|                                        |"));
-      console.log(
-        red("	|   ⚠️  WARNING:  ") + "Cannot Access Email!!" + red("   |")
-      );
-      console.log(red("	|                                        |"));
-      console.log(red("	------------------------------------------"));
+      const name = "⚠️  WARNING";
+      const msg = "Cannot Access Email!!";
+      box(red, name, msg);
     });
 };
 
