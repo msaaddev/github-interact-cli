@@ -1,23 +1,23 @@
-const chalk = require("chalk");
+const {green, red} = require("chalk");
 
 module.exports = (name, data) => {
   if (name === "✉️  Email") {
-    console.log(chalk.green("	-------------------------------------------"));
-    console.log(chalk.green("	|                                         |"));
-    console.log(chalk.green(`	      ${name}: `) + data);
-    console.log(chalk.green("	|                                         |"));
-    console.log(chalk.green("	-------------------------------------------"));
+    console.log(green("	-------------------------------------------"));
+    console.log(green("	|                                         |"));
+    console.log(green(`	      ${name}: `) + data);
+    console.log(green("	|                                         |"));
+    console.log(green("	-------------------------------------------"));
   } else if (data === "No Email Found!!") {
-    console.log(chalk.red("	-------------------------------------------"));
-    console.log(chalk.red("	|                                         |"));
-    console.log(chalk.red(`	|        ${name}: `) + data + chalk.red("     |"));
-    console.log(chalk.red("	|                                         |"));
-    console.log(chalk.red("	-------------------------------------------"));
+    console.log(red("	-------------------------------------------"));
+    console.log(red("	|                                         |"));
+    console.log(red(`	|        ${name}: `) + data + red("     |"));
+    console.log(red("	|                                         |"));
+    console.log(red("	-------------------------------------------"));
   } else {
-    console.log(chalk.red("	-------------------------------------------"));
-    console.log(chalk.red("	|                                         |"));
-    console.log(chalk.red(`	|    ${name}: `) + data + chalk.red("    |"));
-    console.log(chalk.red("	|                                         |"));
-    console.log(chalk.red("	-------------------------------------------"));
+    console.log(red("	-------------------------------------------"));
+    console.log(red("	|                                         |"));
+    console.log(red(`	|    ${name}: `) + data + red("    |"));
+    console.log(red("	|                                         |"));
+    console.log(red("	-------------------------------------------"));
   }
 };
