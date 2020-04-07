@@ -7,7 +7,7 @@
  */
 
 const header = require("./utils/header");
-const cli = require("./utils/cli");
+const options = require("./utils/options");
 
 header();
-cli();
+options();
