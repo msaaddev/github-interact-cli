@@ -13,7 +13,7 @@ const axios = require("axios");
 module.exports = async () => {
   console.log("------------------------------------------");
   // getting data from terminal
-  io.write(cyan("> Enter GitHub username"));
+  io.write(cyan("> Enter GitHub Username"));
   const URL = await io.read();
   await axios
     .get(`https://api.github.com/users/${URL}/events/public`)
