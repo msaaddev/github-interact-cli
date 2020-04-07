@@ -7,7 +7,7 @@
 
 const io = require("console-read-write");
 const { cyan } = require("chalk");
-const box = require("./utils/box");
+const box = require("./box");
 const axios = require("axios");
 
 module.exports = async () => {
