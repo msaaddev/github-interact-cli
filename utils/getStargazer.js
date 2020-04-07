@@ -21,12 +21,9 @@ module.exports = async () => {
   const repo = await io.read();
 
   await axios
-    .get(
-      `https://api.github.com/repos/${username}/${repo}?access_token=${headers.Authorization}`,
-      {
-        headers: headers,
-      }
-    )
+    .get(`https://api.github.com/repos/${username}/${repo}`, {
+      headers: headers,
+    })
     .then((res) => {
       const name = "⭐️  Stars";
       const data = res.data.stargazers_count;
