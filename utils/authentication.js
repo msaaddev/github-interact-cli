@@ -7,7 +7,7 @@ module.exports = async () => {
   if (auth.Authorization === "") {
     io.write(
       red(
-        "\n> To use the CLI without any issue, first enter your GitHub access token. THIS IS ONE TIME THING.\n"
+        "\n> This CLI will work best if you enter your GitHub Access Token, Username & Password. THIS IS ONE TIME THING.\n"
       )
     );
     io.write(
@@ -19,10 +19,22 @@ module.exports = async () => {
     io.write(yellow("Token: "));
     const token = await io.read();
 
-    const data = `module.exports = {
+    const userToken = `module.exports = {
 		Authorization: "Token ${token}",
+    }`;
+
+    io.write(yellow("GitHub Username: "));
+    const username = await io.read();
+
+    io.write(yellow("GitHub Password: "));
+    const password = await io.read();
+
+    const userData = `module.exports = {
+    username: "${username}",
+    password: "${password}",
 	  }`;
 
-    fs.writeFile("./utils/auth.js", data, (err) => {});
+    fs.writeFile("./utils/auth.js", userToken, (err) => {});
+    fs.writeFile("./utils/user.js", userData, (err) => {});
   }
 };
