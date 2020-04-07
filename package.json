@@ -1,12 +1,12 @@
 {
   "name": "github-interact-cli",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "license": "MIT",
   "repository": "https://github.com/msaaddev/github-interact-cli",
   "main": "index.js",
   "author": {
-    "name": "Muhammad Saad",
+    "name": "Saad Irfan",
     "email": "mrsaadirfan@gmail.com",
     "url": "https://twitter.com/msaaddev"
   },
