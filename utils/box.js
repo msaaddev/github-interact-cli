@@ -20,10 +20,16 @@ module.exports = (name, data) => {
     io.write(yellow(`	               ${name}: `) + data);
     io.write(yellow("	|                                         |"));
     io.write(yellow("	-------------------------------------------"));
+  } else if (name === "👌 DONE") {
+    io.write(yellow("\n	-------------------------------------------"));
+    io.write(yellow("	|                                         |"));
+    io.write(yellow(`	               ${name}: `) + data);
+    io.write(yellow("	|                                         |"));
+    io.write(yellow("	-------------------------------------------"));
   } else {
     io.write(red("\n	-------------------------------------------"));
     io.write(red("	|                                         |"));
-    io.write(red(`	|    ${name}: `) + data + red("    |"));
+    io.write(red(`	|    ${name}: `) + data + red("   |"));
     io.write(red("	|                                         |"));
     io.write(red("	-------------------------------------------"));
   }
