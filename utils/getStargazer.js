@@ -19,8 +19,7 @@ module.exports = async () => {
   console.log("");
   io.write(cyan("> Enter GitHub Repo Name"));
   const repo = await io.read();
-
-
+  
   await axios
     .get(
       `https://api.github.com/repos/${username}/${repo}?access_token=${headers.Authorization}`,
