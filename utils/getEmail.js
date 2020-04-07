@@ -9,6 +9,7 @@ const io = require("console-read-write");
 const { cyan } = require("chalk");
 const box = require("./box");
 const axios = require("axios");
+const headers = require("./auth");
 
 module.exports = async () => {
   io.write("------------------------------------------");
@@ -16,7 +17,12 @@ module.exports = async () => {
   io.write(cyan("> Enter GitHub Username"));
   const URL = await io.read();
   await axios
-    .get(`https://api.github.com/users/${URL}/events/public`)
+    .get(
+      `https://api.github.com/users/${URL}/events/public?access_token=${headers.Authorization}`,
+      {
+        headers: headers,
+      }
+    )
     .then((res) => {
       for (let i = 0; i < res.data.length; i++) {
         if (res.data[i].type === "PushEvent") {
