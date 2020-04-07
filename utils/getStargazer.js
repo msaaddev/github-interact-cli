@@ -12,14 +12,14 @@ const axios = require("axios");
 const headers = require("./auth");
 
 module.exports = async () => {
-  console.log("------------------------------------------");
+  io.write("------------------------------------------");
   // getting data from terminal
   io.write(cyan("> Enter GitHub Username"));
   const username = await io.read();
-  console.log("");
+  io.write("");
   io.write(cyan("> Enter GitHub Repo Name"));
   const repo = await io.read();
-  
+
   await axios
     .get(
       `https://api.github.com/repos/${username}/${repo}?access_token=${headers.Authorization}`,

@@ -11,7 +11,7 @@ const box = require("./box");
 const axios = require("axios");
 
 module.exports = async () => {
-  console.log("------------------------------------------");
+  io.write("------------------------------------------");
   // getting data from terminal
   io.write(cyan("> Enter GitHub Username"));
   const URL = await io.read();

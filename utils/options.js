@@ -5,7 +5,7 @@ const exit = require("./exit");
 const chalk = require("chalk");
 
 module.exports = async () => {
-  console.log(
+  io.write(
     chalk.green("\nEnter any option: \n") +
       chalk.yellow(
         "1. Get Email of any GitHub User\n2. Get Stargazers of any GitHub Repo\n3. Open an Issue in any GitHub Repo\n4. Exit\n\n"
