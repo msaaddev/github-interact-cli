@@ -8,6 +8,14 @@
 
 const header = require("./utils/header");
 const options = require("./utils/options");
+const auth = require("./utils/authentication");
 
-header();
-options();
+const cli = async () => {
+  header();
+  try {
+    await auth();
+  } catch (err) {}
+  options();
+};
+
+cli();
