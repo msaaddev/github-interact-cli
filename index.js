@@ -6,11 +6,11 @@
  */
 
 const io = require("console-read-write");
-const { cyan, red, green } = require("chalk");
+const { cyan } = require("chalk");
 const box = require("./utils/box");
 const axios = require("axios");
 
-const emailFetchAutomation = async () => {
+module.exports = async () => {
   console.log("------------------------------------------");
   // getting data from terminal
   io.write(cyan("> Enter GitHub username"));
@@ -37,5 +37,3 @@ const emailFetchAutomation = async () => {
       box(name, msg);
     });
 };
-
-emailFetchAutomation();
