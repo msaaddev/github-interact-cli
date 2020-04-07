@@ -2,13 +2,14 @@ const io = require("console-read-write");
 const email = require("./getEmail");
 const stars = require("./getStargazer");
 const exit = require("./exit");
+const repo = require("./createRepo");
 const chalk = require("chalk");
 
 module.exports = async () => {
   io.write(
     chalk.green("\nEnter any option: \n") +
       chalk.yellow(
-        "1. Get Email of any GitHub User\n2. Get Stargazers of any GitHub Repo\n3. Open an Issue in any GitHub Repo\n4. Exit\n\n"
+        "1. Get Email of any GitHub User\n2. Get Stargazers of any GitHub Repo\n3. Open an Issue in any GitHub Repo\n4. Create a GitHub Repo\n5. Exit\n\n"
       )
   );
   io.write(chalk.green("> Enter the option number: "));
@@ -21,7 +22,12 @@ module.exports = async () => {
     case "2":
       stars();
       break;
+    case "3":
+      break;
     case "4":
+      repo();
+      break;
+    case "5":
       exit();
     default:
       break;
