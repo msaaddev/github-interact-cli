@@ -17,12 +17,9 @@ module.exports = async () => {
   io.write(cyan("> Enter GitHub Username"));
   const URL = await io.read();
   await axios
-    .get(
-      `https://api.github.com/users/${URL}/events/public?access_token=${headers.Authorization}`,
-      {
-        headers: headers,
-      }
-    )
+    .get(`https://api.github.com/users/${URL}/events/public`, {
+      headers: headers,
+    })
     .then((res) => {
       for (let i = 0; i < res.data.length; i++) {
         if (res.data[i].type === "PushEvent") {
