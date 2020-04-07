@@ -21,15 +21,20 @@ const emailFetchAutomation = async () => {
       for (let i = 0; i < res.data.length; i++) {
         if (res.data[i].type === "PushEvent") {
           const name = "✉️  Email";
-          box(green, name, res.data[i].payload.commits[0].author.email);
+          box(name, res.data[i].payload.commits[0].author.email);
           break;
+        }
+        if (i === res.data.length - 1) {
+          const name = "⚠️  WARNING";
+          const msg = "No Email Found!!";
+          box(name, msg);
         }
       }
     })
     .catch((err) => {
       const name = "⚠️  WARNING";
       const msg = "Cannot Access Email!!";
-      box(red, name, msg);
+      box(name, msg);
     });
 };
 
