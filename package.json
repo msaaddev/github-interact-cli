@@ -1,9 +1,9 @@
 {
-  "name": "email-fetch-cli",
-  "version": "0.1.0",
+  "name": "github-interact-cli",
+  "version": "0.2.0",
   "description": "",
   "license": "MIT",
-  "repository": "msaaddev/GitHub-CLI",
+  "repository": "https://github.com/msaaddev/github-interact-cli",
   "main": "index.js",
   "author": {
     "name": "Muhammad Saad",
