@@ -21,9 +21,6 @@ module.exports = async () => {
     io.write(cyan("> Enter GitHub Username"));
     username = await io.read();
     io.write("");
-    io.write(cyan("> Enter GitHub Password"));
-    password = await io.read();
-    io.write("");
   }
   io.write(cyan("> Enter Repo Title"));
   const title = await io.read();
@@ -40,17 +37,17 @@ module.exports = async () => {
   const auto_init = await io.read();
   io.write("");
 
-  /* const head = {
-    Authorization: `Basic ${username}:${password}`,
-  }; */
+  const payLoad = {
+    name: title,
+    description,
+    private,
+    auto_init,
+  };
 
   await axios
-    .post(`https://api.github.com/user/repos`, {
+    .post(`https://api.github.com/user/repos?${headers.Authorization}`, {
       headers: headers,
-      name: title,
-      description,
-      private,
-      auto_init,
+      body: JSON.stringify(payLoad),
     })
     .then((res) => {
       const name = "👌 DONE";
