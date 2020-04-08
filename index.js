@@ -8,7 +8,7 @@
 
 const header = require("./utils/header.js");
 const options = require("./utils/options.js");
-const auth = require("./auth/authentication.js");
+const auth = require("./utils/authentication.js");
 
 const cli = async () => {
   header();

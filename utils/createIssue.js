@@ -9,7 +9,7 @@ const io = require("console-read-write");
 const { cyan, green } = require("chalk");
 const axios = require("axios");
 const box = require("./box.js");
-const headers = require("../auth/auth");
+const headers = require("./auth");
 
 module.exports = async () => {
   io.write("------------------------------------------");
