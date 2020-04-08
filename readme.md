@@ -124,7 +124,11 @@ Use the [Issues](https://github.com/msaaddev/github-interact-cli/issues) section
 
 ## 👨🏻‍💻 AUTHOR
 
-🙋🏻‍♂️ Hola! I am Saad, an undergrad Computer Science student. Say hey! to me at [Twitter](https://twitter.com/msaaddev) or you can add me at [Facebook](https://www.facebook.com/msaaddev). If you are interested in reading some tech blogs then do visit my [website](https://msaad.dev).
+🙋🏻‍♂️ Hola! I am Saad, an undergrad Computer Science student. Follow me at
+
+- [Twitter](https://twitter.com/msaaddev)
+- [Facebook](https://www.facebook.com/msaaddev)
+- [Blog](https://msaad.dev).
 
 ## 🔑 LICENSE
 
