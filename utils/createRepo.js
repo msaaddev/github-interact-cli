@@ -13,8 +13,6 @@ let { username, password } = require("./user");
 const headers = require("./auth");
 
 module.exports = async () => {
-  console.log(headers);
-
   io.write("------------------------------------------");
   // getting data from terminal
   if (username === "" && password === "") {
