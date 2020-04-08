@@ -15,6 +15,7 @@ module.exports = async () => {
         "> If you do not know how to create one, check -> https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line\n"
       )
     );
+    const pwd = process.cwd();
 
     io.write(yellow("Token: "));
     const token = await io.read();
@@ -30,7 +31,7 @@ module.exports = async () => {
   username: "${username}",
 }`;
 
-    fs.writeFileSync("./utils/auth.js", userToken, (err) => {});
-    fs.writeFileSync("./utils/user.js", userData, (err) => {});
+    fs.writeFile(`${pwd}/utils/auth.js`, userToken, (err) => {});
+    fs.writeFile(`${pwd}/utils/user.js`, userData, (err) => {});
   }
 };
