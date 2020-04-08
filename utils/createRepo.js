@@ -6,7 +6,7 @@
  */
 
 const io = require("console-read-write");
-const { cyan } = require("chalk");
+const { cyan, green } = require("chalk");
 const box = require("./box");
 const axios = require("axios");
 let { username, password } = require("./user");
@@ -54,6 +54,8 @@ module.exports = async () => {
       const name = "👌 DONE";
       const msg = "Repo Successfully Created!!";
       box(name, msg);
+      io.write("");
+      io.write(green(`Repo Link -> ${res.data.html_url}\n`));
     })
     .catch((err) => {
       const name = "⚠️  WARNING";
