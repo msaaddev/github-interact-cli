@@ -23,12 +23,12 @@ module.exports = async () => {
     const username = await io.read();
 
     const userToken = `module.exports = {
-        Authorization: "Token ${token}",
-        }`;
+  Authorization: "Token ${token}",
+}`;
 
     const userData = `module.exports = {
-    username: "${username}",
-	  }`;
+  username: "${username}",
+}`;
 
     fs.writeFile("./utils/auth.js", userToken, (err) => {});
     fs.writeFile("./utils/user.js", userData, (err) => {});
