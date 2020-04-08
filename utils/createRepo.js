@@ -44,18 +44,22 @@ module.exports = async () => {
     auto_init,
   };
 
-  await axios
-    .post(`https://api.github.com/user/repos?${headers.Authorization}`, {
-      headers: headers,
-      body: JSON.stringify(payLoad),
-    })
+  const options = {
+    method: "POST",
+    headers: headers,
+    data: JSON.stringify(payLoad),
+    url: `https://api.github.com/user/repos`,
+  };
+
+  await axios(options)
     .then((res) => {
       const name = "👌 DONE";
       const msg = "Repo Successfully Created!!";
       box(name, msg);
     })
     .catch((err) => {
-      console.log(err);
+      console.log(err.response.config.headers);
+      console.log(err.response.data);
 
       const name = "⚠️  WARNING";
       const msg = "Repo Creation Failed!!";
