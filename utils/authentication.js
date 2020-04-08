@@ -26,7 +26,7 @@ try {
   }`;
 
     fs.writeFile(`./auth.js`, userToken, (err) => {});
-    io.write(green("\nKindly restart the CLI now to ensure that everyone is working perfectly. You can do by selecting exit option.\n"))
-    io.write(red("THIS IS ONE TIME THINGY."))
+    io.write(green("\n> Kindly restart the CLI now to ensure that everyone is working perfectly. You can do by selecting exit option.\n"))
+    io.write(red("> THIS IS ONE TIME THINGY."))
   };
 }
