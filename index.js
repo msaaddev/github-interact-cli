@@ -6,9 +6,9 @@
  * Twitter: https://twitter.com/msaaddev
  */
 
-const header = require("./utils/header");
-const options = require("./utils/options");
-const auth = require("./utils/authentication");
+const header = require("./utils/header.js");
+const options = require("./utils/options.js");
+const auth = require("./utils/authentication.js");
 
 const cli = async () => {
   header();

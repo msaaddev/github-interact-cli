@@ -1,9 +1,9 @@
 const io = require("console-read-write");
-const email = require("./getEmail");
-const stars = require("./getStargazer");
-const exit = require("./exit");
-const issue = require("./createIssue");
-const repo = require("./createRepo");
+const email = require("./getEmail.js");
+const stars = require("./getStargazer.js");
+const exit = require("./exit.js");
+const issue = require("./createIssue.js");
+const repo = require("./createRepo.js");
 const chalk = require("chalk");
 
 module.exports = async () => {
