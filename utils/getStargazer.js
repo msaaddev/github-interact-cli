@@ -25,7 +25,7 @@ module.exports = async () => {
       headers: headers,
     })
     .then((res) => {
-      const name = "⭐️  Stars";
+      const name = "⭐️  STARS";
       const data = res.data.stargazers_count;
       box(name, data);
     })
