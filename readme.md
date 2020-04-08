@@ -28,7 +28,7 @@ npm i -g github-interact-cli
 	<img src="https://i.imgur.com/ClFFvhH.gif">
 </div>
 
-## 🔥 HOW TO USE
+## 🏗 SETUP
 
 Type the following in the terminal to run the CLI.
 
@@ -38,7 +38,7 @@ github
 
 CLI will start running. It will ask you to add a **Personal Access Token** & your **GitHub Username**. If you don't know what Personal Access Token is & how to create one, check this [awesome guide](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) by GitHub.
 
-`！Note:` Be sure to give the token *repo* & *admin:repo_hook* access.
+`！Note:` Be sure to give the token _repo_ & _admin:repo_hook_ access.
 
 <img src="https://i.imgur.com/El9gYcp.png">
 
@@ -46,4 +46,6 @@ Once you are done, exit the CLI so that configurations can be saved & used again
 
 <img src="https://i.imgur.com/fVdgewD.png">
 
-`！ Note:` This is one time thing. You will not have to do it again every time you will run the CLI.
+`！ Note:` This is one time thing. You will not have to do it again every time you run the CLI.
+
+
