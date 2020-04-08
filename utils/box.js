@@ -23,15 +23,21 @@ module.exports = (name, data) => {
   } else if (name === "👌 DONE") {
     io.write(yellow("\n	-------------------------------------------"));
     io.write(yellow("	|                                         |"));
-    io.write(yellow(`	               ${name}: `) + data);
+    io.write(yellow(`	     ${name}: `) + data);
     io.write(yellow("	|                                         |"));
     io.write(yellow("	-------------------------------------------"));
-  } else if(data === "Issue Successfully Created!!") {
+  } else if (data === "Issue Successfully Created!!") {
     io.write(yellow("\n	-------------------------------------------"));
     io.write(yellow("	|                                         |"));
-    io.write(yellow(`	               ${name}: `) + data);
+    io.write(yellow(` ${name}: `) + data);
     io.write(yellow("	|                                         |"));
     io.write(yellow("	-------------------------------------------"));
+  } else if (data === "Issue Creation Failed!!") {
+    io.write(red("\n	-------------------------------------------"));
+    io.write(red("	|                                         |"));
+    io.write(red(`	|   ${name}: `) + data + red("   |"));
+    io.write(red("	|                                         |"));
+    io.write(red("	-------------------------------------------"));
   } else {
     io.write(red("\n	-------------------------------------------"));
     io.write(red("	|                                         |"));
