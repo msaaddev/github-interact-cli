@@ -26,6 +26,12 @@ module.exports = (name, data) => {
     io.write(yellow(`	               ${name}: `) + data);
     io.write(yellow("	|                                         |"));
     io.write(yellow("	-------------------------------------------"));
+  } else if(data === "Issue Successfully Created!!") {
+    io.write(yellow("\n	-------------------------------------------"));
+    io.write(yellow("	|                                         |"));
+    io.write(yellow(`	               ${name}: `) + data);
+    io.write(yellow("	|                                         |"));
+    io.write(yellow("	-------------------------------------------"));
   } else {
     io.write(red("\n	-------------------------------------------"));
     io.write(red("	|                                         |"));
