@@ -1,6 +1,6 @@
 const fs = require("fs");
 const io = require("console-read-write");
-const auth = require("../auth.js");
+const auth = require("./auth.js");
 const { green, red, yellow } = require("chalk");
 
 module.exports = async () => {
@@ -30,7 +30,7 @@ module.exports = async () => {
   username: "${username}",
 }`;
 
-    fs.writeFile("auth.js", userToken, (err) => {});
-    fs.writeFile("user.js", userData, (err) => {});
+    fs.writeFile("../utils/auth.js", userToken, (err) => {});
+    fs.writeFile("../utils/user.js", userData, (err) => {});
   }
 };
