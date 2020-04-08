@@ -7,14 +7,8 @@
  */
 
 const header = require("./utils/header.js");
-const _ = require("underscore");
 const options = require("./utils/options.js");
 const auth = require("./utils/authentication.js");
-
-const hello = () => {
-  console.log(hello);
-};
-_.once(hello);
 
 const cli = async () => {
   header();
