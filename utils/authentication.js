@@ -30,11 +30,7 @@ module.exports = async () => {
   username: "${username}",
 }`;
 
-    fs.writeFile("./utils/auth.js", userToken, (err) => {
-      console.log(err);
-    });
-    fs.writeFile("./utils/user.js", userData, (err) => {
-      console.log(err);
-    });
+    fs.writeFileSync("./utils/auth.js", userToken, (err) => {});
+    fs.writeFileSync("./utils/user.js", userData, (err) => {});
   }
 };
