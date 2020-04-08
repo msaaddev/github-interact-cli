@@ -2,7 +2,7 @@ const { green, red, yellow } = require("chalk");
 const io = require("console-read-write");
 
 module.exports = (name, data) => {
-  if (name === "✉️  Email") {
+  if (name === "✉️  EMAIL") {
     io.write(green("\n	-------------------------------------------"));
     io.write(green("	|                                         |"));
     io.write(green(`	      ${name}: `) + data);
@@ -14,7 +14,7 @@ module.exports = (name, data) => {
     io.write(red(`	|        ${name}: `) + data + red("     |"));
     io.write(red("	|                                         |"));
     io.write(red("	-------------------------------------------"));
-  } else if (name === "⭐️  Stars") {
+  } else if (name === "⭐️  STARS") {
     io.write(yellow("\n	-------------------------------------------"));
     io.write(yellow("	|                                         |"));
     io.write(yellow(`	               ${name}: `) + data);
