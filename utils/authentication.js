@@ -16,6 +16,7 @@ module.exports = async () => {
       )
     );
     const pwd = process.cwd();
+    console.log(pwd);
 
     io.write(yellow("Token: "));
     const token = await io.read();
