@@ -48,4 +48,68 @@ Once you are done, exit the CLI so that configurations can be saved & used again
 
 `！ Note:` This is one time thing. You will not have to do it again every time you run the CLI.
 
+## 📦 Create New Repo
 
+Once you are done with the above setup, write the following in the terminal to run the CLI again.
+
+```
+github
+```
+
+You will get this menu. 🔥
+
+<img src="https://i.imgur.com/z9I199e.png">
+
+Enter `1` to Create a GitHub Repo. Then answer the next questions.
+
+<img src="https://i.imgur.com/fpv4MBS.gif">
+
+Taa daa! Your repo has been created. 🥂
+
+## ⚠️ Open Issue
+
+Type the following in the terminal to run the CLI.
+
+```
+github
+```
+
+You will get this menu. 🔥
+
+<img src="https://i.imgur.com/z9I199e.png">
+
+Enter `2` to Create a GitHub Repo. Then answer the next questions.
+
+<img src="https://i.imgur.com/ZP6TzQc.png">
+
+## ✉️ Get Public Email
+
+Type the following in the terminal to run the CLI.
+
+```
+github
+```
+
+You will get this menu. 🔥
+
+<img src="https://i.imgur.com/z9I199e.png">
+
+Enter `3` to Create a GitHub Repo. Then answer the next questions.
+
+<img src="https://i.imgur.com/ajXz5RE.png">
+
+## ⭐️Get Stargazers
+
+Type the following in the terminal to run the CLI.
+
+```
+github
+```
+
+You will get this menu. 🔥
+
+<img src="https://i.imgur.com/z9I199e.png">
+
+Enter `4` to Create a GitHub Repo. Then answer the next questions.
+
+<img src="https://i.imgur.com/E70a4Xv.png">
