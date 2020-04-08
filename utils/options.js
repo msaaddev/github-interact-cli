@@ -2,6 +2,7 @@ const io = require("console-read-write");
 const email = require("./getEmail");
 const stars = require("./getStargazer");
 const exit = require("./exit");
+const issue = require("./createIssue");
 const repo = require("./createRepo");
 const chalk = require("chalk");
 
@@ -23,6 +24,7 @@ module.exports = async () => {
       stars();
       break;
     case "3":
+      issue();
       break;
     case "4":
       repo();
