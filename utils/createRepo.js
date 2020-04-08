@@ -15,7 +15,7 @@ const headers = require("./auth");
 module.exports = async () => {
   io.write("------------------------------------------");
   // getting data from terminal
-  if (username === "" && password === "") {
+  if (username === "") {
     io.write(cyan("> Enter GitHub Username"));
     username = await io.read();
     io.write("");
