@@ -10,7 +10,7 @@ module.exports = async () => {
   io.write(
     chalk.green("\nEnter any option: \n") +
       chalk.yellow(
-        "1. Get Email of any GitHub User\n2. Get Stargazers of any GitHub Repo\n3. Open an Issue in any GitHub Repo\n4. Create a GitHub Repo\n5. Exit\n\n"
+        "1. Create a GitHub Repo \n2. Open an Issue in any GitHub Repo \n3. Get Email of any GitHub User\n4. Get Stargazers of any GitHub Repo\n5. Exit\n\n"
       )
   );
   io.write(chalk.green("> Enter the option number: "));
@@ -18,16 +18,16 @@ module.exports = async () => {
 
   switch (option) {
     case "1":
-      email();
+      repo();
       break;
     case "2":
-      stars();
-      break;
-    case "3":
       issue();
       break;
+    case "3":
+      email();
+      break;
     case "4":
-      repo();
+      stars();
       break;
     case "5":
       exit();
