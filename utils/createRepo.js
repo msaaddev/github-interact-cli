@@ -23,14 +23,23 @@ module.exports = async () => {
   const title = await io.read();
   io.write("");
   io.write(
-    cyan("> Enter Repo Description (You can leave it blank. Just Press Enter)")
+    cyan("> Enter Repo Description (You can leave it blank. Just Press Enter.)")
   );
   const description = await io.read();
   io.write("");
-  io.write(cyan("> Create Private Repo? (True/False)"));
-  const private = await io.read();
+  io.write(
+    cyan(
+      "> Create Private Repo? (True/False) (You can leave it blank. Public Repo will be created. Just Press Enter.)"
+    )
+  );
+  let private = await io.read();
+  if (private === "false" || private === "") private = false;
   io.write("");
-  io.write(cyan("> Create empty README.MD file? (True/False)"));
+  io.write(
+    cyan(
+      "> Create empty README.MD file? (True/False) (You can leave it blank. Just Press Enter.)"
+    )
+  );
   const auto_init = await io.read();
   io.write("");
 
@@ -44,7 +53,7 @@ module.exports = async () => {
   const options = {
     method: "POST",
     headers: headers,
-    data: JSON.stringify(payLoad),
+    data: payLoad,
     url: `https://api.github.com/user/repos`,
   };
 
