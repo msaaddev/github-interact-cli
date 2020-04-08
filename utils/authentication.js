@@ -9,7 +9,7 @@ try {
   module.exports = async () => {
     io.write(
       red(
-        "\n> This CLI will work best if you enter your GitHub Access Token. THIS IS ONE TIME THINGY.\n"
+        "\n> This CLI will work best if you enter your GitHub Access Token & Username. THIS IS ONE TIME THINGY.\n"
       )
     );
     io.write(
@@ -20,13 +20,25 @@ try {
 
     io.write(yellow("Token: "));
     const token = await io.read();
+    io.write("");
+    io.write(yellow("Username: "));
+    const username = await io.read();
 
     const userToken = `module.exports = {
     Authorization: "Token ${token}",
   }`;
 
+    const userName = `module.exports = {
+    username: "${username}",
+  }`;
+
     fs.writeFile(`./auth.js`, userToken, (err) => {});
-    io.write(green("\n> Kindly restart the CLI now to ensure that everyone is working perfectly. You can do by selecting exit option.\n"))
-    io.write(red("> THIS IS ONE TIME THINGY."))
+    fs.writeFile(`./user.js`, userName, (err) => {});
+    io.write(
+      green(
+        "\n> Kindly restart the CLI now to ensure that everyone is working perfectly. You can do by selecting exit option.\n"
+      )
+    );
+    io.write(red("> THIS IS ONE TIME THINGY."));
   };
 }
