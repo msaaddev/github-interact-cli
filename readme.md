@@ -7,7 +7,7 @@
 	</h1>
 </div>
 
-github-interact-cli lets you use GitHub features right inside your termina;.
+`github-interact-cli` lets you use GitHub right inside your termina;.
 
 ## 👉 Features
 
@@ -15,3 +15,35 @@ github-interact-cli lets you use GitHub features right inside your termina;.
 - ⚠️ Open issue in any repo.
 - ✉️ Get public email of any GitHub user
 - ⭐️Get stargazers of any GitHub repo
+
+## 🎩 INSTALLATION
+
+If you are windows user, run your command prompt/terminal as administrator. If you are macOS user, add `sudo` before the following command.
+
+```
+npm i -g github-interact-cli
+```
+
+<div align="center">
+	<img src="https://i.imgur.com/ClFFvhH.gif">
+</div>
+
+## 🔥 HOW TO USE
+
+Type the following in the terminal to run the CLI.
+
+```
+github
+```
+
+CLI will start running. It will ask you to add a **Personal Access Token** & your **GitHub Username**. If you don't know what Personal Access Token is & how to create one, check this [awesome guide](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) by GitHub.
+
+`！Note:` Be sure to give the token *repo* & *admin:repo_hook* access.
+
+<img src="https://i.imgur.com/El9gYcp.png">
+
+Once you are done, exit the CLI so that configurations can be saved & used again.
+
+<img src="https://i.imgur.com/fVdgewD.png">
+
+`！ Note:` This is one time thing. You will not have to do it again every time you will run the CLI.
