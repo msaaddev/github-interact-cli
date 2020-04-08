@@ -23,7 +23,7 @@ module.exports = async () => {
     const username = await io.read();
 
     const userToken = `module.exports = {
-        Authorization: "${username}:${token}",
+        Authorization: "Token ${token}",
         }`;
 
     const userData = `module.exports = {
