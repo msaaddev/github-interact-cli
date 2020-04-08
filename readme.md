@@ -48,7 +48,7 @@ Once you are done, exit the CLI so that configurations can be saved & used again
 
 `！ Note:` This is one time thing. You will not have to do it again every time you run the CLI.
 
-## 📦 Create New Repo
+### 📦 Create New Repo
 
 Once you are done with the above setup, write the following in the terminal to run the CLI again.
 
@@ -66,7 +66,7 @@ Enter `1` to Create a GitHub Repo. Then answer the next questions.
 
 Taa daa! Your repo has been created. 🥂
 
-## ⚠️ Open Issue
+### ⚠️ Open Issue
 
 Type the following in the terminal to run the CLI.
 
@@ -82,7 +82,7 @@ Enter `2` to Create a GitHub Repo. Then answer the next questions.
 
 <img src="https://i.imgur.com/ZP6TzQc.png">
 
-## ✉️ Get Public Email
+### ✉️ Get Public Email
 
 Type the following in the terminal to run the CLI.
 
@@ -98,7 +98,7 @@ Enter `3` to Create a GitHub Repo. Then answer the next questions.
 
 <img src="https://i.imgur.com/ajXz5RE.png">
 
-## ⭐️Get Stargazers
+### ⭐️Get Stargazers
 
 Type the following in the terminal to run the CLI.
 
@@ -113,3 +113,19 @@ You will get this menu. 🔥
 Enter `4` to Create a GitHub Repo. Then answer the next questions.
 
 <img src="https://i.imgur.com/E70a4Xv.png">
+
+## 🚀 FEATURE REQUEST
+
+Use the [Issues](https://github.com/msaaddev/github-interact-cli/issues) section if you want to request any feature or report an issue.
+
+## 🙌🏻 PROPS
+
+- Header Image by [Iqra Fatima](https://github.com/iqrafatimame)
+
+## 👨🏻‍💻 AUTHOR
+
+🙋🏻‍♂️ Hola! I am Saad, an undergrad Computer Science student. Say hey! to me at [Twitter](https://twitter.com/msaaddev) or you can add me at [Facebook](https://www.facebook.com/msaaddev). If you are interested in reading some tech blogs then do visit my [website](https://msaad.dev).
+
+## 🔑 LICENSE
+
+- MIT
