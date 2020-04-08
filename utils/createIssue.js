@@ -49,9 +49,6 @@ module.exports = async () => {
       box(name, msg);
     })
     .catch((err) => {
-      console.log(err.response.config.headers);
-      console.log(err.response.data);
-
       const name = "⚠️  WARNING";
       const msg = "Issue Creation Failed!!";
       box(name, msg);
