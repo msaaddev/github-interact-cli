@@ -5,11 +5,15 @@
  * Twitter: https://twitter.com/msaaddev
  */
 
+const pwd = process.cwd();
 const io = require("console-read-write");
 const { cyan } = require("chalk");
 const axios = require("axios");
 const box = require("./box.js");
-const headers = require("./auth.js");
+let headers;
+try {
+  headers = require(`${pwd}/auth.js`);
+} catch (error) {}
 
 module.exports = async () => {
   io.write("------------------------------------------");

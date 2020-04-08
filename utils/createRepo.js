@@ -5,21 +5,20 @@
  * Twitter: https://twitter.com/msaaddev
  */
 
+const pwd = process.cwd();
 const io = require("console-read-write");
 const { cyan, green } = require("chalk");
 const axios = require("axios");
 const box = require("./box.js");
-let { username } = require("./user.js");
-const headers = require("./auth.js");
+let headers;
+try {
+  headers = require(`${pwd}/auth.js`);
+} catch (error) {}
 
 module.exports = async () => {
   io.write("------------------------------------------");
   // getting data from terminal
-  if (username === "") {
-    io.write(cyan("> Enter GitHub Username"));
-    username = await io.read();
-    io.write("");
-  }
+
   io.write(cyan("> Enter Repo Title"));
   const title = await io.read();
   io.write("");

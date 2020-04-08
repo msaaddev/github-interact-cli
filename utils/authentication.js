@@ -1,13 +1,15 @@
 const fs = require("fs");
 const io = require("console-read-write");
 const { green, red, yellow } = require("chalk");
-const auth = require("./auth.js");
+const pwd = process.cwd();
 
-module.exports = async () => {
-  if (auth.Authorization === "") {
+try {
+  const newAuth = require(`${pwd}/auth.js`);
+} catch (error) {
+  module.exports = async () => {
     io.write(
       red(
-        "\n> This CLI will work best if you enter your GitHub Access Token & Username. THIS IS ONE TIME THING.\n"
+        "\n> This CLI will work best if you enter your GitHub Access Token. THIS IS ONE TIME THING.\n"
       )
     );
     io.write(
@@ -19,22 +21,10 @@ module.exports = async () => {
     io.write(yellow("Token: "));
     const token = await io.read();
 
-    io.write(yellow("GitHub Username: "));
-    const username = await io.read();
-
     const userToken = `module.exports = {
-  Authorization: "Token ${token}",
-}`;
+    Authorization: "Token ${token}",
+  }`;
 
-    const userData = `module.exports = {
-  username: "${username}",
-}`;
-
-    fs.writeFile(`./auth.js`, userToken, (err) => {
-      console.log(err);
-    });
-    fs.writeFile(`./user.js`, userData, (err) => {
-      console.log(err);
-    });
-  }
-};
+    fs.writeFile(`./auth.js`, userToken, (err) => {});
+  };
+}
