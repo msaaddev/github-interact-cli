@@ -9,7 +9,7 @@ try {
   module.exports = async () => {
     io.write(
       red(
-        "\n> This CLI will work best if you enter your GitHub Access Token. THIS IS ONE TIME THING.\n"
+        "\n> This CLI will work best if you enter your GitHub Access Token. THIS IS ONE TIME THINGY.\n"
       )
     );
     io.write(
@@ -26,5 +26,7 @@ try {
   }`;
 
     fs.writeFile(`./auth.js`, userToken, (err) => {});
+    io.write(green("\nKindly restart the CLI now to ensure that everyone is working perfectly. You can do by selecting exit option.\n"))
+    io.write(red("THIS IS ONE TIME THINGY."))
   };
 }
