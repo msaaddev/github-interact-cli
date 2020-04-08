@@ -23,6 +23,7 @@
     "axios": "^0.19.2",
     "chalk": "^4.0.0",
     "console-read-write": "^0.1.1",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "underscore": "^1.10.2"
   }
 }
