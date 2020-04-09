@@ -10,7 +10,7 @@ const io = require("console-read-write");
 const { cyan } = require("chalk");
 const axios = require("axios");
 const box = require("./box.js");
-const table = require("./repoOutput.js");
+const display = require("./repoOutput.js");
 const clear = require("clear");
 const exit = require("./exit");
 
@@ -38,7 +38,7 @@ module.exports = async () => {
       io.write("");
 
       for (let i = 0; i < res.data.length; i++) {
-        table(
+        display(
           i + 1,
           res.data[i].name,
           res.data[i].fork,
@@ -52,10 +52,9 @@ module.exports = async () => {
       exit();
     })
     .catch((err) => {
-      console.log(err);
-
       const name = "⚠️  WARNING";
       const msg = "Couldn't Get Repos!!";
       box(name, msg);
+      exit();
     });
 };

@@ -10,6 +10,7 @@ const io = require("console-read-write");
 const { cyan, green } = require("chalk");
 const axios = require("axios");
 const box = require("./box.js");
+const exit = require("./exit.js");
 let headers;
 try {
   headers = require(`${pwd}/auth.js`);
@@ -53,11 +54,13 @@ module.exports = async () => {
       box(name, msg);
 
       io.write("");
-      io.write(green(`Issue Link -> ${res.data.html_url}\n`));
+      io.write(green(`Issue Link -> ${res.data.html_url}`));
+      exit();
     })
     .catch((err) => {
       const name = "⚠️  WARNING";
       const msg = "Issue Creation Failed!!";
       box(name, msg);
+      exit();
     });
 };

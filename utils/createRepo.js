@@ -10,6 +10,7 @@ const io = require("console-read-write");
 const { cyan, green } = require("chalk");
 const axios = require("axios");
 const box = require("./box.js");
+const exit = require("./exit.js");
 let headers;
 try {
   headers = require(`${pwd}/auth.js`);
@@ -63,11 +64,13 @@ module.exports = async () => {
       const msg = "Repo Successfully Created!!";
       box(name, msg);
       io.write("");
-      io.write(green(`Repo Link -> ${res.data.html_url}\n`));
+      io.write(green(`Repo Link -> ${res.data.html_url}`));
+      exit();
     })
     .catch((err) => {
       const name = "⚠️  WARNING";
       const msg = "Repo Creation Failed!!";
       box(name, msg);
+      exit();
     });
 };

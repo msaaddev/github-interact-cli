@@ -10,6 +10,7 @@ const io = require("console-read-write");
 const { cyan } = require("chalk");
 const axios = require("axios");
 const box = require("./box.js");
+const exit = require("./exit.js");
 let headers;
 try {
   headers = require(`${pwd}/auth.js`);
@@ -32,10 +33,12 @@ module.exports = async () => {
       const name = "⭐️  STARS";
       const data = res.data.stargazers_count;
       box(name, data);
+      exit();
     })
     .catch((err) => {
       const name = "⚠️  WARNING";
       const msg = "Cannot Access Stars!!";
       box(name, msg);
+      exit();
     });
 };
