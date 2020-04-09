@@ -27,7 +27,7 @@ module.exports = async () => {
     .then((res) => {
       for (let i = 0; i < res.data.length; i++) {
         if (res.data[i].type === "PushEvent") {
-          const name = "✉️  EMAIL";
+            const name = "✉️  EMAIL";
           box(name, res.data[i].payload.commits[0].author.email);
           break;
         }

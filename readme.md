@@ -7,7 +7,7 @@
 	</h1>
 </div>
 
-`github-interact-cli` lets you use GitHub right inside your termina;.
+`github-interact-cli` lets you use GitHub right inside your terminal.
 
 ## 👉 Features
 
