@@ -38,7 +38,7 @@ try {
     fs.writeFile(`./user.js`, userName, (err) => {});
     io.write(
       green(
-        "\n> Kindly restart the CLI now to ensure that everyone is working perfectly. You can do by selecting exit option.\n"
+        "\n> Kindly restart the CLI now to ensure that everyone is working perfectly. You can do it by selecting exit option.\n"
       )
     );
     io.write(red("> THIS IS ONE TIME THINGY."));
