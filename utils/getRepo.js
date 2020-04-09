@@ -31,11 +31,12 @@ module.exports = async () => {
     headers: headers,
     url: `https://api.github.com/users/${username}/repos?page=1&per_page=1000`,
   };
-
   await axios(options)
     .then((res) => {
       //   console.log(res.data[1].description);
       clear();
+      io.write("");
+
       for (let i = 0; i < res.data.length; i++) {
         table(
           i + 1,
