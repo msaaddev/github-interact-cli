@@ -1,2 +1,4 @@
 node_modules/
 .DS_Store
+auth.js
+user.js
