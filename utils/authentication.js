@@ -5,6 +5,8 @@ const pwd = process.cwd();
 
 try {
   const newAuth = require(`${pwd}/auth.js`);
+  const user = require(`${pwd}/user.js`);
+  if (newAuth.Authorization.length < 7 || user.username === "") throw err;
 } catch (error) {
   module.exports = async () => {
     io.write(
