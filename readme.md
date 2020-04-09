@@ -128,7 +128,7 @@ Use the [Issues](https://github.com/msaaddev/github-interact-cli/issues) section
 
 - [Twitter](https://twitter.com/msaaddev)
 - [Facebook](https://www.facebook.com/msaaddev)
-- [Blog](https://msaad.dev).
+- [Blog](https://msaad.dev)
 
 ## 🔑 LICENSE
 
