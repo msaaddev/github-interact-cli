@@ -1,5 +1,27 @@
 # 🔥Changes Across Different Versions of `github-interact-cli`
 
+## 🚀 v3.3.2
+
+- New keywords
+
+### 🌐 Commits
+
+- 📦 NEW: [version](https://github.com/msaaddev/github-interact-cli/commit/384b6179fa69f5c05d1c83fdf78ed67efd5dc788)
+- 📦 NEW: [keywords](https://github.com/msaaddev/github-interact-cli/commit/e4bfbb7bc6251627940b737e1d20de7a2d72999b)
+
+## 🚀 v3.3.1
+
+- Added shortcuts
+
+### 🌐 Commits
+
+- 🐛 FIX: [shortcut](https://github.com/msaaddev/github-interact-cli/commit/cc2963c89c8c11b481d1e6d02147ed30989f5203)
+- 📖 DOC: [updated](https://github.com/msaaddev/github-interact-cli/commit/e910e6e7cb62e48f41fa378ad24fe6c5bdacff3c)
+- 📦 NEW: [version](https://github.com/msaaddev/github-interact-cli/commit/17e3e57627939f298df9873537171f1769eed731)
+- 📦 NEW: [shortcuts](https://github.com/msaaddev/github-interact-cli/commit/8ee39fc73170c78fc1cac2007a463e50c539dbfd)
+- 🐛FIX: [name](https://github.com/msaaddev/github-interact-cli/commit/33eac7279f1cca697bb4fbc9defb4bf7a60dcac6)
+- 📖 DOC: [till v3.2.0](https://github.com/msaaddev/github-interact-cli/commit/70395f8c52cf3e00eb9506fe8316600719bd1b71)
+
 ## 🚀 v3.2.0
 
 - Added Delete Repo Feature
