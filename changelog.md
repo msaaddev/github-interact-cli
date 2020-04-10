@@ -1,5 +1,21 @@
 # 🔥Changes Across Different Versions of `github-interact-cli`
 
+## 🚀 v3.2.0
+
+- Added Delete Repo Feature
+- Added changelog.md
+
+### 🌐 Commits
+
+- 🐛FIX: [link](https://github.com/msaaddev/github-interact-cli/commit/d5753e365f15d7e65733a54c25b86f01d2486ee1)
+- 📖DOC: [update readme](https://github.com/msaaddev/github-interact-cli/commit/612a9f9670c933934b781966b771f46a91956963)
+- 📦NEW: [version](https://github.com/msaaddev/github-interact-cli/commit/3086600ab995ec9c190556f8cc9e14968c6d5f1b)
+- 📦NEW: [help msg](https://github.com/msaaddev/github-interact-cli/commit/27fd38f4e113d1c6f4006704626dc70b7aaa7bdf)
+- 📖DOC: [till v3.1.0](https://github.com/msaaddev/github-interact-cli/commit/261b27b89a40c7a3df737b647d7c81415cd8ba43)
+- 📖DOC: [till v2.2.5](https://github.com/msaaddev/github-interact-cli/commit/e10d4e77f30b4a6624af10635b5e8d0c30767b79)
+- 📖DOC: [till v2.0.0](https://github.com/msaaddev/github-interact-cli/commit/a76c3f514e4b054b08be8a8f1905b96c3987b85c)
+- 📦NEW: [delete repo](https://github.com/msaaddev/github-interact-cli/commit/5a27971317b6ce083b3b34f12d8c3e3fd9d1145f)
+
 ## 🚀 v3.1.0
 
 - Improve readme
