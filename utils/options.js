@@ -5,13 +5,14 @@ const stars = require("./getStargazer.js");
 const exit = require("./exit.js");
 const issue = require("./createIssue.js");
 const repo = require("./createRepo.js");
-const listrepo = require("./getRepo");
+const listRepo = require("./getRepo.js");
+const deleteRepo = require("./deleteRepo.js");
 
 module.exports = async () => {
   io.write(
     chalk.green("\nEnter any option: \n") +
       chalk.yellow(
-        "1. Create a GitHub Repo \n2. List Public Repos of any GitHub User\n3. Open an Issue in any GitHub Repo \n4. Get Email of any GitHub User\n5. Get Stargazers of any GitHub Repo\n6. Exit\n\n"
+        "1. Create a GitHub Repo \n2. Delete your repo\n3. List Public Repos of any GitHub User\n4. Open an Issue in any GitHub Repo \n5. Get Email of any GitHub User\n6. Get Stargazers of any GitHub Repo\n7. Exit\n\n"
       )
   );
   io.write(chalk.green("> Enter the option number: "));
@@ -22,18 +23,21 @@ module.exports = async () => {
       repo();
       break;
     case "2":
-      listrepo();
+      deleteRepo();
       break;
     case "3":
-      issue();
+      listRepo();
       break;
     case "4":
-      email();
+      issue();
       break;
     case "5":
-      stars();
+      email();
       break;
     case "6":
+      stars();
+      break;
+    case "7":
       exit();
     default:
       break;

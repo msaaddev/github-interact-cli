@@ -10,49 +10,38 @@ const io = require("console-read-write");
 const { cyan } = require("chalk");
 const axios = require("axios");
 const box = require("./box.js");
-const display = require("./repoOutput.js");
 const clear = require("clear");
 const exit = require("./exit");
 
-let headers;
+let headers, username;
 try {
   headers = require(`${pwd}/auth.js`);
+  username = require(`${pwd}/user.js`);
 } catch (error) {}
 
 module.exports = async () => {
   io.write("------------------------------------------");
   // getting data from terminal
 
-  io.write(cyan("> Enter Username"));
-  const username = await io.read();
+  io.write(cyan("> Enter the repo name you want to delete: "));
+  const repo = await io.read();
 
   const options = {
-    method: "GET",
+    method: "DELETE",
     headers: headers,
-    url: `https://api.github.com/users/${username}/repos?page=1&per_page=1000`,
+    url: `https://api.github.com/repos/${username.username}/${repo}`,
   };
   await axios(options)
     .then((res) => {
-      clear();
+      const name = "👌 DONE";
+      const msg = "Repo Successfully Deleted!!";
+      box(name, msg);
       io.write("");
-
-      for (let i = 0; i < res.data.length; i++) {
-        display(
-          i + 1,
-          res.data[i].name,
-          res.data[i].fork,
-          res.data[i].html_url,
-          res.data[i].description
-        );
-      }
-
-      io.write("");
-      io.write(cyan(`Total Repos: ${res.data.length}`));
       exit();
     })
     .catch((err) => {
       const name = "⚠️  WARNING";
-      const msg = "Couldn't Get Repos!!";
+      const msg = "Couldn't Delete Repos!!";
       box(name, msg);
       exit();
     });
