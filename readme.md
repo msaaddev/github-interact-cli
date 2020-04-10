@@ -9,7 +9,7 @@
 
 `github-interact-cli` lets you use GitHub right inside your terminal.
 
-## 👉 Features
+## 👉 FEATURES
 
 - 📦 Create a new repo
 - ♻️ Delete your existing repo
