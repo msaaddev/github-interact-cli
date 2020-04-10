@@ -43,7 +43,11 @@ module.exports = async () => {
       const name = "⚠️  WARNING";
       const msg = "Couldn't Delete Repos!!";
       box(name, msg);
-      io.write(yellow("\n> Be sure to give delete repo access to your personal access token. You can read about it more here -> https://github.com/msaaddev/github-interact-cli/blob/master/readme.md#-delete-your-existing-repo"))
+      io.write(
+        yellow(
+          "\n> Be sure to give delete repo access to your personal access token. You can read about it more here -> https://github.com/msaaddev/github-interact-cli#%EF%B8%8F-delete-your-existing-repo"
+        )
+      );
       exit();
     });
 };
