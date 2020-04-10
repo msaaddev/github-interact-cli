@@ -12,7 +12,13 @@
   },
   "bin": {
     "github": "index.js",
-    "github-cli": "index.js"
+    "github-cli": "index.js",
+    "github-new": "utils/repo.js",
+    "github-get": "utils/gtRepo.js",
+    "github-issue": "utils/issue.js",
+    "github-stars": "utils/star.js",
+    "github-email": "utils/email.js",
+    "github-delete": "utils/delete.js"
   },
   "files": [
     "index.js",
