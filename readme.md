@@ -2,7 +2,7 @@
 
 <div align="center">
 	<h1>⚡️ github-interact-cli<br>
-	<img alt="version: 3.3.0" src="https://img.shields.io/badge/version-v3.3.0-green">
+	<img alt="version: 3.3.1" src="https://img.shields.io/badge/version-v3.3.1-green">
 	<img alt="license: MIT" src="https://img.shields.io/badge/license-MIT-green">
 	</h1>
 </div>
@@ -132,7 +132,6 @@ Taa daa! The repo has been deleted. 🙌🏻
 - You will see a list of personal access tokens. Select the token you created earlier for github-interact-cli.
 - Scroll down the scope list and select **delete_repo**
 - Then scroll at the bottom & select **Update token**
-
 
 <img alt="steps of editing personal access token" src="https://i.imgur.com/2s3lOJV.gif">
 
