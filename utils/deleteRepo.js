@@ -1,6 +1,6 @@
 /**
  *
- * Author: Muhammad Saad
+ * Author: Saad Irfan
  * GitHub: msaaddev
  * Twitter: https://twitter.com/msaaddev
  */

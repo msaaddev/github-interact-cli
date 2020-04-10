@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  *
- * Author: Muhammad Saad
+ * Author: Saad Irfan
  * GitHub: msaaddev
  * Twitter: https://twitter.com/msaaddev
  */
