@@ -7,7 +7,7 @@
 
 const pwd = process.cwd();
 const io = require("console-read-write");
-const { cyan } = require("chalk");
+const { cyan, yellow } = require("chalk");
 const axios = require("axios");
 const box = require("./box.js");
 const clear = require("clear");
@@ -43,6 +43,7 @@ module.exports = async () => {
       const name = "⚠️  WARNING";
       const msg = "Couldn't Delete Repos!!";
       box(name, msg);
+      io.write(yellow("\n> Be sure to give delete repo access to your personal access token. You can read about it more here -> https://github.com/msaaddev/github-interact-cli/blob/master/readme.md#-delete-your-existing-repo"))
       exit();
     });
 };

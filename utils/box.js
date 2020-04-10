@@ -38,6 +38,12 @@ module.exports = (name, data) => {
     io.write(red(`	|   ${name}: `) + data + red("   |"));
     io.write(red("	|                                         |"));
     io.write(red("	-------------------------------------------"));
+  } else if (data === "Couldn't Delete Repos!!") {
+    io.write(red("\n	-------------------------------------------"));
+    io.write(red("	|                                         |"));
+    io.write(red(`	|    ${name}: `) + data + red("  |"));
+    io.write(red("	|                                         |"));
+    io.write(red("	-------------------------------------------"));
   } else {
     io.write(red("\n	-------------------------------------------"));
     io.write(red("	|                                         |"));
