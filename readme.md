@@ -2,7 +2,7 @@
 
 <div align="center">
 	<h1>⚡️ github-interact-cli<br>
-	<img alt="version: 3.2.0" src="https://img.shields.io/badge/version-v3.2.0-green">
+	<img alt="version: 3.3.0" src="https://img.shields.io/badge/version-v3.3.0-green">
 	<img alt="license: MIT" src="https://img.shields.io/badge/license-MIT-green">
 	</h1>
 </div>
@@ -49,6 +49,44 @@ Once you are done, exit the CLI so that configurations can be saved & used again
 <img alt="done" src="https://i.imgur.com/fVdgewD.png">
 
 `！ Note:` This is one time thing. You will not have to do it again every time you run the CLI.
+
+### 👌 Shortcuts
+
+- New Repo
+
+```
+github-new
+```
+
+- Delete Repo
+
+```
+github-delete
+```
+
+- Get All Public Repo
+
+```
+github-get
+```
+
+- Open Issue
+
+```
+github-issue
+```
+
+- Get Email
+
+```
+github-email
+```
+
+- Get Stars
+
+```
+github-stars
+```
 
 ### 📦 Create New Repo
 
