@@ -1,5 +1,40 @@
 # 🔥Changes Across Different Versions of `github-interact-cli`
 
+## 🚀 v3.1.0
+
+- Improve readme
+- Added Get All Repos
+- Dealt with edge case
+
+### 🌐 Commits
+
+- 📖DOC: [updated](https://github.com/msaaddev/github-interact-cli/commit/3f8928d8c4511be13da39ba13437b273bbdf31ac)
+- 📦NEW: [version](https://github.com/msaaddev/github-interact-cli/commit/821334b764770f0612306ad6d7536fa15e5a0195)
+- 📦NEW: [exit](https://github.com/msaaddev/github-interact-cli/commit/d11a05fc2996c1ce040164d3d8f60302df2297b1)
+- 🐛FIX: [display](https://github.com/msaaddev/github-interact-cli/commit/ec3d4d84f2a9ed0c20baa55f94767902db8e9206)
+- 📦NEW: [version](https://github.com/msaaddev/github-interact-cli/commit/78fab34020bca2bb33545182fc09458c0c13dcdb)
+- 📦NEW: [get all repos](https://github.com/msaaddev/github-interact-cli/commit/e1cb6ef10ee6f86ec47f4eae3b6444c798a03b19)
+- 🔗Merge pull request #6 from [azanbinzahid/patch-1](https://github.com/msaaddev/github-interact-cli/commit/709ca3e286349e33316523669385f453423b4b36)
+- 🐛FIX: [ignore auth and user details](https://github.com/msaaddev/github-interact-cli/commit/d65e149f4df7c45b95428d23a8b3d659cbc1bd8c)
+- 📦NEW: [versio](https://github.com/msaaddev/github-interact-cli/commit/f64a779bbdd82f4e53a4426aae88e01b3ffcbb19)
+- 🐛FIX: [typo](https://github.com/msaaddev/github-interact-cli/commit/3e47a05f2af1b50ee47253db242f82517e3b55ae)
+
+## 🚀 v2.2.8
+
+- Dealt with Edge Case
+- Fixed a type & badge error
+
+### 🌐 Commits
+
+- 📦NEW: [version](https://github.com/msaaddev/github-interact-cli/commit/d5aa8f0ab8c22677b745a7f596e7dacddb1e7c4f)
+- 🐛FIX: [typo](https://github.com/msaaddev/github-interact-cli/commit/7f0d8fd122532a1f7a513a8b19acf5d538351e4f)
+- 🐛FIX: [version](https://github.com/msaaddev/github-interact-cli/commit/06d802fac054773e614425816a490822df53253c)
+- 🐛FIX: [badge](https://github.com/msaaddev/github-interact-cli/commit/f0b88c72ab65bb83072a6b98cc7af77be345ab56)
+- 📦NEW: [version](https://github.com/msaaddev/github-interact-cli/commit/3f490842e499846a8484990fab14f24afdb8cc20)
+- 📖DOC: [remove period](https://github.com/msaaddev/github-interact-cli/commit/1b76d82a90ad6aa09847703122738e0e1424020a)
+- 📦NEW: [version](https://github.com/msaaddev/github-interact-cli/commit/6c79e5235308fc69d07544a8d8b0e484ff87c10f)
+- 🐛FIX: [edge case](https://github.com/msaaddev/github-interact-cli/commit/5975f25598be972a3f9acdf4d7430b307f2e0a17)
+
 ## 🚀 v2.2.5
 
 - Fixed auth.js & user.js location
