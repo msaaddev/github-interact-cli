@@ -28,7 +28,13 @@
     "github-cli",
     "create-repo",
     "cli",
-    "github automation"
+    "github automation",
+    "delete-repo",
+    "stargazers",
+    "issues",
+    "github-issues",
+    "get all repos",
+    "node.js automation"
   ],
   "dependencies": {
     "axios": "^0.19.2",
