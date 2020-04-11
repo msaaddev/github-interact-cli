@@ -52,6 +52,8 @@ Once you are done, exit the CLI so that configurations can be saved & used again
 
 ### 👌 Shortcuts
 
+You can now use shortcuts to interact with the CLI. Just type any of the following in the terminal & hit <kbd>Enter</kbd>
+
 - New Repo
 
 ```
@@ -90,7 +92,7 @@ github-stars
 
 ### 📦 Create New Repo
 
-Once you are done with the above setup, write the following in the terminal to run the CLI again.
+Write the following in the terminal to run the CLI again.
 
 ```
 github
