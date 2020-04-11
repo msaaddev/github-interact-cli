@@ -16,11 +16,11 @@
 - 🚀 Get all public repos of any GitHub User
 - ⚠️ Open issue in any repo.
 - ✉️ Get public email of any GitHub user
-- ⭐️Get stargazers of any GitHub repo
+- ⭐️ Get stargazers of any GitHub repo
 
 ## 🎩 INSTALLATION
 
-If you are windows user, run your command prompt/terminal as administrator. If you are macOS user, add `sudo` before the following command.
+Install the CLI globally. If you are windows user, run your command prompt/terminal as administrator. If you are macOS user, add `sudo` before the following command.
 
 ```
 npm i -g github-interact-cli
