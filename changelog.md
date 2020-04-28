@@ -1,5 +1,17 @@
 # 🔥Changes Across Different Versions of `github-interact-cli`
 
+## 🚀 v3.3.3
+
+- Fix typo
+
+### 🌐 Commits
+
+- 📖 DOC: version
+- 🐛 FIX: typo
+- 👌IMPROVE: readme
+- 👌IMPROVE: readme
+- 👌IMPROVE: consistency
+
 ## 🚀 v3.3.2
 
 - New keywords
