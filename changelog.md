@@ -6,11 +6,11 @@
 
 ### 🌐 Commits
 
-- 📖 DOC: version
-- 🐛 FIX: typo
-- 👌IMPROVE: readme
-- 👌IMPROVE: readme
-- 👌IMPROVE: consistency
+- 📖 DOC: [version](https://github.com/msaaddev/github-interact-cli/commit/730b8e8d16a500ab91fcb80d61f6542c8a869fed)
+- 🐛 FIX: [typo](https://github.com/msaaddev/github-interact-cli/commit/2da876a185e1047c91115c3176ef7ac7606a469f)
+- 👌IMPROVE: [readme](https://github.com/msaaddev/github-interact-cli/commit/9ba448e59b2f0355bfeb092f91a58e5cb79882a3)
+- 👌IMPROVE: [readme](https://github.com/msaaddev/github-interact-cli/commit/9dba64996dacb679bb35cd4d53d940879d3d1492)
+- 👌IMPROVE: [consistency](https://github.com/msaaddev/github-interact-cli/commit/5a1aea967390eba21e4692a140d718f95dbafdb5)
 
 ## 🚀 v3.3.2
 
