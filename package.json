@@ -1,6 +1,6 @@
 {
     "name": "github-interact-cli",
-    "version": "3.3.3",
+    "version": "3.3.4",
     "description": "A CLI which lets you perform repetitive github tasks",
     "license": "MIT",
     "repository": "https://github.com/msaaddev/github-interact-cli",
