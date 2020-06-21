@@ -2,8 +2,9 @@
 
 <div align="center">
 	<h1>⚡️ github-interact-cli<br>
-	<img alt="version: 3.3.4" src="https://img.shields.io/badge/version-v3.3.4-green">
-	<img alt="license: MIT" src="https://img.shields.io/badge/license-MIT-green">
+	<img src="https://img.shields.io/npm/v/github-interact-cli?color=%#80C73D&label=version">
+	<img src="https://img.shields.io/npm/dt/github-interact-cli?color=%#80C73D">
+	<img src="https://img.shields.io/npm/l/github-interact-cli?color=%2380C73D">
 	</h1>
 </div>
 
