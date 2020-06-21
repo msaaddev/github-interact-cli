@@ -4,7 +4,7 @@
 	<h1>⚡️ github-interact-cli<br>
 	<img src="https://img.shields.io/npm/v/github-interact-cli?color=%#80C73D&label=version">
 	<img src="https://img.shields.io/npm/dt/github-interact-cli?color=%#80C73D">
-	<img src="https://img.shields.io/npm/l/github-interact-cli?color=%2380C73D">
+	<img src="https://img.shields.io/npm/l/github-interact-cli?color=%#80C73D">
 	</h1>
 </div>
 
