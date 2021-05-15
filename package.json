@@ -1,46 +1,52 @@
 {
-    "name": "github-interact-cli",
-    "version": "3.3.4",
-    "description": "A CLI which lets you perform repetitive github tasks",
-    "license": "MIT",
-    "repository": "https://github.com/msaaddev/github-interact-cli",
-    "main": "index.js",
-    "author": {
-        "name": "Saad Irfan",
-        "email": "mrsaadirfan@gmail.com",
-        "url": "https://twitter.com/msaaddev"
-    },
-    "bin": {
-        "github": "index.js",
-        "github-cli": "index.js",
-        "github-new": "utils/repo.js",
-        "github-get": "utils/gtRepo.js",
-        "github-issue": "utils/issue.js",
-        "github-stars": "utils/stars.js",
-        "github-email": "utils/email.js",
-        "github-delete": "utils/delete.js"
-    },
-    "files": [
-        "index.js",
-        "utils/*"
-    ],
-    "keywords": [
-        "github-cli",
-        "create-repo",
-        "cli",
-        "github automation",
-        "delete-repo",
-        "stargazers",
-        "issues",
-        "github-issues",
-        "get all repos",
-        "node.js automation"
-    ],
-    "dependencies": {
-        "axios": "^0.19.2",
-        "chalk": "^4.0.0",
-        "clear": "^0.1.0",
-        "console-read-write": "^0.1.1",
-        "fs": "0.0.1-security"
-    }
+	"name": "github-interact-cli",
+	"version": "3.3.4",
+	"description": "A CLI which lets you perform repetitive github tasks",
+	"license": "MIT",
+	"repository": "https://github.com/msaaddev/github-interact-cli",
+	"main": "index.js",
+	"author": {
+		"name": "Saad Irfan",
+		"email": "mrsaadirfan@gmail.com",
+		"url": "https://twitter.com/msaaddev"
+	},
+	"bin": {
+		"github": "index.js",
+		"github-cli": "index.js",
+		"github-new": "utils/repo.js",
+		"github-get": "utils/gtRepo.js",
+		"github-issue": "utils/issue.js",
+		"github-stars": "utils/stars.js",
+		"github-email": "utils/email.js",
+		"github-delete": "utils/delete.js"
+	},
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"files": [
+		"index.js",
+		"utils/*"
+	],
+	"keywords": [
+		"github-cli",
+		"create-repo",
+		"cli",
+		"github automation",
+		"delete-repo",
+		"stargazers",
+		"issues",
+		"github-issues",
+		"get all repos",
+		"node.js automation"
+	],
+	"dependencies": {
+		"axios": "^0.19.2",
+		"chalk": "^4.0.0",
+		"clear": "^0.1.0",
+		"console-read-write": "^0.1.1",
+		"fs": "0.0.1-security"
+	},
+	"devDependencies": {
+		"prettier": "^2.3.0"
+	}
 }

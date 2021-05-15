@@ -1,3 +1,3 @@
-const cli = require("./index");
+const cli = require('./index');
 
 cli();

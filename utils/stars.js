@@ -6,18 +6,18 @@
  * Twitter: https://twitter.com/msaaddev
  */
 
-const clear = require("clear");
-const header = require("./header.js");
-const auth = require("./authentication.js");
-const star = require("./getStargazer.js");
+const clear = require('clear');
+const header = require('./header.js');
+const auth = require('./authentication.js');
+const star = require('./getStargazer.js');
 
 const cli = async () => {
-  clear();
-  header();
-  try {
-    await auth();
-  } catch (err) {}
-  star();
+	clear();
+	header();
+	try {
+		await auth();
+	} catch (err) {}
+	star();
 };
 
 cli();
