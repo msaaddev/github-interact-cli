@@ -224,6 +224,10 @@ Use the [Issues](https://github.com/msaaddev/github-interact-cli/issues) section
 - [Facebook](https://www.facebook.com/msaaddev)
 - [Blog](https://msaad.dev)
 
+## ⚡️ Other Projects
+
+I have curated a [detailed list](https://github.com/msaaddev/open-source) of all the open-source projects I have authored. Do take out a moment and take a look.
+
 ## 🔑 LICENSE
 
 - MIT
